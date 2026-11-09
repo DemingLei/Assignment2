@@ -1,0 +1,16 @@
+# Findings
+
+## Part (a)
+1. The mean blood glucose level in the sample was 115.1 mg/dL, which is 6.80 mg/dL lower than the population mean of 121.90 mg/dL. The chart on the right explains the reason: 18 of the 25 sample values were below the overall mean, so the proportion of patients with low blood glucose in this specific sample was slightly higher. With only 25 observations, such a large discrepancy is within the range of normal sampling variation, amounting to approximately 1.2 standard errors.
+2. The maximum value in the sample is 193 mg/dL, while the maximum value in the population is 199 mg/dL. The maximum value in the sample cannot exceed the maximum value in the population because the sample is drawn from the population. The maximum value in the sample will equal the maximum value in the population only if the sample happens to include that one most extreme patient.
+
+## Part (b)
+1. The 98th percentile for BMI in this sample was 46.22, which is slightly lower than the 47.39 for the general population, with a difference of -1.17.
+2. When n = 25, the 98th percentile lies between the two largest sample values, because 0.98 * (25 − 1) = 23.52. This depends almost entirely on which one or two patients with higher BMI values happen to be included in the sample. If one more or one fewer patient with extreme values were included, this value would change significantly.
+3. The chart on the right shows that the red sample curve closely follows the blue population curve in the middle portion of the distribution, but takes on a stepped appearance at the 98th percentile.
+
+## Part (c)
+1. The mean was reproduced with the perfect accuracy. The deviation between the average of the 500 means obtained using the self-sampling method and the population mean was within 0.03 mmHg. The individual means ranged from 69.55 to 75.23, and their coefficient of variation (1.010 mmHg) was consistent with the theoretical standard error of 1.010. The self-sampling method reproduced the sampling distribution predicted by theory.
+2. The standard deviation was also estimated with very high accuracy. Each resampling used the sampling formula ddof=1, which is unbiased with respect to the population variance. The mean obtained using the guided method differed from the population variance by only 0.01 mmHg. The results of each resampling still fell within the range of 9.93 to 15.15 mmHg.
+3. The 98th percentile is not a reliable statistical measure. Its self-calculated mean (98.56) is 1.44 mmHg lower than the population mean, and there is considerable variation among the estimates (standard deviation 5.09, range 88-110). Becasue among the 150 observations, the 98th percentile is based solely on the first three values obtained from each resampling. Whether those rare, highest readings are included has a significant impact on the value; if they are not included, the value decreases. In addition, blood pressure is typically recorded as an even integer, so the percentile can only take on a few different values.
+4. By averaging across many bootstrap samples, it is possible to estimate the center, mean, and standard deviation with high precision. Statistics at the tails of the distribution converge more slowly. To estimate extreme quantiles with the same precision as the mean, a larger number of bootstrap samples is required.

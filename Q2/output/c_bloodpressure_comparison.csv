@@ -1,0 +1,4 @@
+,population,bootstrap_average,bootstrap_spread_sd,difference,percent_difference
+mean,72.401,72.368,1.01,-0.032,-0.044
+standard deviation,12.371,12.365,0.835,-0.007,-0.053
+98th percentile,100.0,98.559,5.085,-1.441,-1.441
